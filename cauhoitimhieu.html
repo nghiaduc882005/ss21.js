@@ -1,0 +1,69 @@
+<!-- // 1. Cơ chế hoạt động cuả javascript trên trình duyệt.  -->
+
+Trình thông dịch JavaScript: JavaScript hoạt động trên trình duyệt nhờ vào trình thông dịch JavaScript (JavaScript engine) mà các trình duyệt web cung cấp. Mỗi trình duyệt có trình thông dịch riêng của mình. 
+
+Phân tích cú pháp (Parsing): Trình thông dịch JavaScript phân tích các đoạn mã JavaScript thành cấu trúc dữ liệu có ý nghĩa để chuẩn bị cho việc thực thi. 
+
+Biên dịch và tối ưu hóa (Compilation and Optimization): Mã JavaScript có thể được biên dịch thành mã máy hoặc mã trung gian tối ưu hóa để tăng tốc độ thực thi. 
+
+Thực thi (Execution): Mã JavaScript được thực thi, và các hành động tương ứng với mã đó được thực hiện trên trang web, bao gồm thay đổi nội dung, xử lý sự kiện người dùng, gửi yêu cầu mạng, và nhiều tác vụ khác. 
+
+Môi trường khác: Ngoài trình duyệt, JavaScript cũng có thể chạy trên các môi trường khác như Node.js, cho phép thực thi mã JavaScript ở phía máy chủ. 
+
+ 
+
+<!-- //2. Thế nào là Javascript runtime ? kể tên.  -->
+
+JavaScript runtime là môi trường thực thi JavaScript, cung cấp các công cụ và thư viện để chạy mã JavaScript trên các môi trường khác nhau. Dưới đây là một số JavaScript runtime quan trọng: 
+
+Node.js: Node.js là một JavaScript runtime được xây dựng dựa trên Chrome's V8 JavaScript engine. Nó cho phép thực thi mã JavaScript ở phía máy chủ và hỗ trợ xử lý sự kiện không đồng bộ và I/O mạng. 
+
+Deno: Deno là một JavaScript runtime mới, cũng sử dụng V8 JavaScript engine, nhưng có thiết kế khác biệt so với Node.js. Nó có bộ công cụ chuẩn tích hợp sẵn và đặc biệt chú trọng đến bảo mật. 
+
+Browser Runtimes (V8, SpiderMonkey, Chakra): Các trình duyệt web như Chrome, Firefox và Edge cung cấp các JavaScript runtime tích hợp (V8, SpiderMonkey, Chakra) để thực thi mã JavaScript trên trình duyệt. 
+
+Các JavaScript runtime quan trọng này cung cấp môi trường thực thi cho mã JavaScript, cho phép chạy mã trên máy chủ, trình duyệt, và các môi trường khác. 
+
+ 
+
+<!-- // 3. Thế nào là Javascript engine ? Kể tên  -->
+
+ 
+
+JavaScript engine là một phần mềm hoặc mô-đun có khả năng biên dịch và thực thi mã JavaScript. Nó là trung tâm của mọi môi trường JavaScript, và chịu trách nhiệm cho việc biên dịch và thực thi mã JavaScript. 
+  
+
+Dưới đây là một số JavaScript engine quan trọng: 
+
+  
+
+V8 (Google Chrome, Node.js): V8 là JavaScript engine được phát triển bởi Google cho trình duyệt Chrome và cũng được sử dụng trong Node.js. 
+
+  
+
+SpiderMonkey (Mozilla Firefox): SpiderMonkey là JavaScript engine được sử dụng trong trình duyệt Firefox. 
+
+  
+
+Chakra (Microsoft Edge): Chakra là JavaScript engine được sử dụng trong trình duyệt Edge của Microsoft. 
+
+  
+
+Các JavaScript engine này thực hiện việc biên dịch và thực thi mã JavaScript trên các môi trường khác nhau, từ trình duyệt đến máy chủ. 
+
+ 
+
+<!-- 4. Thế nào là TDZ (Temperal Dead Zone).  -->
+
+TDZ (Temporal Dead Zone) là một khái niệm trong JavaScript, đề cập đến phạm vi mà các biến "let" và "const" được khai báo nhưng chưa thể truy cập được. 
+
+Khi một biến được khai báo bằng "let" hoặc "const", nó sẽ tồn tại trong TDZ từ điểm khai báo đến điểm khởi tạo thực sự. Trong TDZ, nếu bạn cố gắng truy cập biến trước khi nó được khởi tạo, một lỗi sẽ xảy ra. 
+
+<!-- Ví dụ: 
+
+console.log(myVar); // Error: Cannot access 'myVar' before initialization
+let myVar = 10; -->
+
+Trong đoạn mã trên, khi chúng ta cố gắng truy cập "myVar" trước khi nó được khởi tạo, một lỗi về TDZ sẽ xảy ra. Điều này nhấn mạnh rằng biến "myVar" đã được khai báo nhưng chưa thể truy cập được trong TDZ. 
+
+ 
